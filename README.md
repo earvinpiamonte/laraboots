@@ -13,6 +13,7 @@ This project includes the following:
 -   [Browsersync](https://www.browsersync.io/) (lazy people's F5 &mdash; like me, hehe)
 -   Pre-configured `.htaccess` on root directory (points to `/public/` directory)
 -   Pre-configured `webpack.mix.js` (+ versioning and Browsersync)
+-   Automatically creates `.env` file and generates `APP_KEY` based on `.env.example` &mdash; (so don't delete this file)
 
 That's all. Nothing fancy.
 

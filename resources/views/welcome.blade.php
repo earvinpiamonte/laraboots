@@ -8,7 +8,7 @@
     <!-- Compiled CSS -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-    <title>Laravel + Bootstrap boilerplate by {{ '@'.env('AUTHOR_TWITTER_HANDLE') }}</title>
+    <title>{{ env('APP_NAME') }} boilerplate by {{ '@'.env('AUTHOR_TWITTER_HANDLE') }}</title>
   </head>
   <body>
     <section class="h-100 py-5 bg-black">
@@ -16,7 +16,7 @@
             <div class="row align-items-center h-100">
                 <div class="col-12">
                     <div class="text-center text-white">
-                        <h1 class="text-uppercase">Laravel + Bootstrap</h1><!-- /.text-uppercase -->
+                        <h1 class="text-uppercase">{{ env('APP_NAME') }}</h1><!-- /.text-uppercase -->
                         <p>
                             by
                             <a href="https://twitter.com/{{ env('AUTHOR_TWITTER_HANDLE') }}" target="_blank" rel="noopener noreferrer">{{ env('AUTHOR_NAME') }}</a>

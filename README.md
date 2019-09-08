@@ -58,13 +58,21 @@ Run all Mix tasks and minify output
 npm run prod
 ```
 
-Now, the cool part here is when you modify a script or PHP file, watch as the browser instantly refreshes the page to reflect your changes.
+WANT TO AUTOMATICALLY RELOAD THE BROWSER WHEN YOU MAKE CHANGES ON THE SOURCE CODE?
 
-Do that by running:
+Say no more fam. [Browsersync](https://www.browsersync.io/) is here.
+
+First, update the `APP_DOMAIN` on your `.env` file. That's on line number 6.
+
+You can change the `APP_DOMAIN` to something like `localhost/laravel-bootstrap/`, depends on your setup. Please just check it out. It's a cool feature. Believe me.
+
+After setting up the `APP_DOMAIN`, run:
 
 ```
 npm run watch
 ```
+
+The cool part here is when you modify a script or PHP file, watch as the browser instantly refreshes the page to reflect your changes.
 
 I'm actually tired of typing things here so just go ahead and go to [Laravel Mix's](https://laravel.com/docs/6.0/mix) documentation.
 

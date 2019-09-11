@@ -31,6 +31,6 @@
     </section><!-- /.h-100 py-5 bg-black -->
 
     <!-- Compiled JavaScript -->
-    <script src="public{{ env('ASSET_DIR').mix('js/app.js') }}"></script>
+    <script src="{{ env('ASSET_DIR').mix('js/app.js') }}"></script>
   </body>
 </html>

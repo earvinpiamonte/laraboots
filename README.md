@@ -63,11 +63,11 @@ WANT TO AUTOMATICALLY RELOAD THE BROWSER WHEN YOU MAKE CHANGES ON THE SOURCE COD
 
 Say no more fam. [Browsersync](https://www.browsersync.io/) is here.
 
-First, update the `APP_DOMAIN` on your `.env` file. That's on line number 6.
+First, update the `APP_URL` and `APP_PACKAGE` on your `.env` file. That's on line number 5 and 6.
 
-You can change the `APP_DOMAIN` to something like `localhost/laravel-bootstrap/`, depends on your setup. Please just check it out. It's a cool feature. Believe me.
+You can change the `APP_URL` and `APP_PACKAGE` to your preference, depends on your setup. Please just check it out. It's a cool feature. Believe me.
 
-After setting up the `APP_DOMAIN`, run:
+After setting up the `APP_URL` and `APP_PACKAGE`, run:
 
 ```
 npm run watch

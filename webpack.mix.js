@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 const ENV = process.env;
 
-mix.browserSync(ENV.APP_DOMAIN);
+mix.browserSync(`${ENV.APP_URL}/${ENV.APP_PACKAGE}`);
 
 mix.disableNotifications();
 

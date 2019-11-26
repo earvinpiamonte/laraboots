@@ -8,10 +8,10 @@ It's just basically a Laravel project. I just added Bootstrap via [npm](https://
 
 This project includes the following:
 
--   [Laravel](https://laravel.com/) version 6.0.x
+-   [Laravel](https://laravel.com/) version 6.x
 -   [Bootsrap](https://getbootstrap.com/) version 4.3.x
+-   Uses Laravel Homestead!!!
 -   [Browsersync](https://www.browsersync.io/) (lazy people's F5 &mdash; like me, hehe)
--   Pre-configured `.htaccess` on root directory
 -   Pre-configured `webpack.mix.js` (+ versioning and Browsersync)
 -   Automatically creates `.env` file and generates `APP_KEY` based on `.env.example` &mdash; (so don't delete this file)
 
@@ -31,19 +31,35 @@ First, change your directory to `laravel-bootstrap` &mdash; the one you just clo
 cd laravel-bootstrap
 ```
 
-Then, do composer update.
+Then, execute the following commands:
 
-```
+```bash
 composer update
 ```
-
-After that, do install Node.js modules.
-
+```bash
+vagrant up
 ```
-npm install
+```bash
+php vendor/bin/homestead make
 ```
+
+## Connect via SSH
+
+```bash
+vagrant ssh
+```
+
 
 ## Compiling assets
+
+While connected via SSH, change the directory to `~/code/` and install Node modules:
+
+```bash
+cd code/
+```
+```bash
+npm install
+```
 
 Get the most out of Larvel by using their [Mix](https://laravel.com/docs/6.0/mix) that runs on top of [Webpack](https://webpack.js.org/). Pretty cool.
 
@@ -63,19 +79,31 @@ WANT TO AUTOMATICALLY RELOAD THE BROWSER WHEN YOU MAKE CHANGES ON THE SOURCE COD
 
 Say no more fam. [Browsersync](https://www.browsersync.io/) is here.
 
-First, update the `APP_URL` and `APP_PACKAGE` on your `.env` file. That's on line number 5 and 6.
+First, update the `MIX_SENTRY_DSN_PUBLIC` file on your `.env` file, matching the assigned hostname on the `- map` of your `Homestead.yaml`.
 
-You can change the `APP_URL` and `APP_PACKAGE` to your preference, depends on your setup. Please just check it out. It's a cool feature. Believe me.
+eg. from `Homestead.yaml`
+```yaml
+sites:
+  - map: laravel-bootstrap.local
+    to: /home/vagrant/code/public
+```
 
-After setting up the `APP_URL` and `APP_PACKAGE`, run:
+Therefore, your `MIX_SENTRY_DSN_PUBLIC` should be set to `http://laravel-bootstrap.local`.
+
+
+After setting up the `MIX_SENTRY_DSN_PUBLIC` correctly, run the following (still connected via SSH):
 
 ```
-npm run watch
+npm run serve
 ```
+
+Open your browser and enter `http://laravel-bootstrap:3000`. The files are now on watch.
+
 
 The cool part here is when you modify a script or PHP file, watch as the browser instantly refreshes the page to reflect your changes.
 
 I'm actually tired of typing things here so just go ahead and go to [Laravel Mix's](https://laravel.com/docs/6.0/mix) documentation.
+
 
 ## Contact
 

@@ -10,10 +10,9 @@ This project includes the following:
 
 -   [Laravel](https://laravel.com/) version 6.x
 -   [Bootsrap](https://getbootstrap.com/) version 4.3.x
--   Uses Laravel Homestead!!!
+-   Uses [Laravel Homestead](https://laravel.com/docs/6.x/homestead)!!!
 -   [Browsersync](https://www.browsersync.io/) (lazy people's F5 &mdash; like me, hehe)
 -   Pre-configured `webpack.mix.js` (+ versioning and Browsersync)
--   Automatically creates `.env` file and generates `APP_KEY` based on `.env.example` &mdash; (so don't delete this file)
 
 That's all. Nothing fancy.
 
@@ -97,7 +96,7 @@ After setting up the `MIX_SENTRY_DSN_PUBLIC` correctly, run the following (still
 npm run serve
 ```
 
-Open your browser and enter `http://laravel-bootstrap:3000`. The files are now on watch.
+Open your browser and enter `http://laravel-bootstrap:3000`. The files are now on watch. Take note of the port!
 
 
 The cool part here is when you modify a script or PHP file, watch as the browser instantly refreshes the page to reflect your changes.

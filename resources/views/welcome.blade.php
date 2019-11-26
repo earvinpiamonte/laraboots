@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Compiled CSS -->
-    <link rel="stylesheet" href="{{ env('ASSET_DIR').mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <title>{{ env('APP_NAME') }} boilerplate by {{ '@'.env('AUTHOR_TWITTER_HANDLE') }}</title>
   </head>
@@ -31,6 +31,6 @@
     </section><!-- /.h-100 py-5 bg-black -->
 
     <!-- Compiled JavaScript -->
-    <script src="{{ env('ASSET_DIR').mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
   </body>
 </html>

@@ -37,11 +37,11 @@ composer update
 ```
 
 ```bash
-vagrant up
+php vendor/bin/homestead make
 ```
 
 ```bash
-php vendor/bin/homestead make
+vagrant up
 ```
 
 ## Connect via SSH

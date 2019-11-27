@@ -2,8 +2,6 @@
 
 I got tired of setting up a Laravel project so I created a boilerplate that I clone everytime I need to create a [Laravel](https://laravel.com/) with [Bootstrap](https://getbootstrap.com/) project.
 
-It's just basically a Laravel project. I just added Bootstrap via [npm](https://www.npmjs.com). WTF, don't judge.
-
 ## Contents
 
 This project includes the following:

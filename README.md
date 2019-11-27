@@ -14,7 +14,7 @@ This project includes the following:
 
 That's all. Nothing fancy.
 
-## Clone/ get a copy
+## Clone
 
 ```
 git clone https://github.com/earvinpiamonte/laraboots.git
@@ -118,15 +118,13 @@ Open your browser and enter `http://laraboots.local:3000`. The files are now on 
 
 The cool part here is when you modify a script or PHP file, watch as the browser instantly refreshes the page to reflect your changes.
 
-I'm actually tired of typing things here so just go ahead and go to [Laravel Mix's](https://laravel.com/docs/6.0/mix) documentation.
-
 ## Contact
 
 Found any issue or have some recommendation? Email me at [earvin.piamonte@gmail.com](mailto:earvin.piamonte@gmail.com).
 
 Also, check out my [website](https://earvinpiamonte.com). It's built using React, Gatsby as the static site generator and deployed on Netlify.
 
-### CTRL/CMD + F me:
+### Find me:
 
 GitHub - https://github.com/earvinpiamonte
 

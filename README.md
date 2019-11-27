@@ -40,6 +40,18 @@ composer update
 php vendor/bin/homestead make
 ```
 
+Don't forget!
+
+Please update `map` value to the following on `Homestead.yaml`:
+
+eg.
+
+```bash
+sites:
+    - map: laraboots.local
+      to: /home/vagrant/code/public
+```
+
 ```bash
 vagrant up
 ```

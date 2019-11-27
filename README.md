@@ -19,15 +19,15 @@ That's all. Nothing fancy.
 ## Clone/ get a copy
 
 ```
-git clone https://github.com/earvinpiamonte/laravel-bootstrap.git
+git clone https://github.com/earvinpiamonte/laraboots.git
 ```
 
 ## Install packages and update
 
-First, change your directory to `laravel-bootstrap` &mdash; the one you just cloned.
+First, change your directory to `laraboots` &mdash; the one you just cloned.
 
 ```
-cd laravel-bootstrap
+cd laraboots
 ```
 
 Then, execute the following commands:
@@ -35,9 +35,11 @@ Then, execute the following commands:
 ```bash
 composer update
 ```
+
 ```bash
 vagrant up
 ```
+
 ```bash
 php vendor/bin/homestead make
 ```
@@ -48,7 +50,6 @@ php vendor/bin/homestead make
 vagrant ssh
 ```
 
-
 ## Compiling assets
 
 While connected via SSH, change the directory to `~/code/` and install Node modules:
@@ -56,6 +57,7 @@ While connected via SSH, change the directory to `~/code/` and install Node modu
 ```bash
 cd code/
 ```
+
 ```bash
 npm install
 ```
@@ -81,14 +83,14 @@ Say no more fam. [Browsersync](https://www.browsersync.io/) is here.
 First, update the `MIX_SENTRY_DSN_PUBLIC` file on your `.env` file, matching the assigned hostname on the `- map` of your `Homestead.yaml`.
 
 eg. from `Homestead.yaml`
+
 ```yaml
 sites:
-  - map: laravel-bootstrap.local
-    to: /home/vagrant/code/public
+    - map: laraboots.local
+      to: /home/vagrant/code/public
 ```
 
-Therefore, your `MIX_SENTRY_DSN_PUBLIC` should be set to `http://laravel-bootstrap.local`.
-
+Therefore, your `MIX_SENTRY_DSN_PUBLIC` should be set to `http://laraboots.local`.
 
 After setting up the `MIX_SENTRY_DSN_PUBLIC` correctly, run the following (still connected via SSH):
 
@@ -96,13 +98,11 @@ After setting up the `MIX_SENTRY_DSN_PUBLIC` correctly, run the following (still
 npm run serve
 ```
 
-Open your browser and enter `http://laravel-bootstrap:3000`. The files are now on watch. Take note of the port!
-
+Open your browser and enter `http://laraboots.local:3000`. The files are now on watch. Take note of the port!
 
 The cool part here is when you modify a script or PHP file, watch as the browser instantly refreshes the page to reflect your changes.
 
 I'm actually tired of typing things here so just go ahead and go to [Laravel Mix's](https://laravel.com/docs/6.0/mix) documentation.
-
 
 ## Contact
 

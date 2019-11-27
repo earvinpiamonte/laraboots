@@ -42,7 +42,7 @@ php vendor/bin/homestead make
 
 Don't forget!
 
-Please update `map` value to the following on `Homestead.yaml`:
+Please update `map` value under `sites:` to the following on `Homestead.yaml`:
 
 eg.
 
@@ -52,8 +52,14 @@ sites:
       to: /home/vagrant/code/public
 ```
 
+This is important.
+
 ```bash
 vagrant up
+```
+
+```bash
+vagrant reload --provision
 ```
 
 ## Connect via SSH
